@@ -6,6 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-24 - Adsterra integration for The Magus Circle
+
+- Task: Populate the fixed six Adsterra unit values in `src/data/ads.ts` (Native Banner, Banner 728x90, 468x60, 320x50, 160x600, Smartlink) so the V3 ad components begin requesting real Adsterra placements after launch.
+- Files changed: `src/data/ads.ts`.
+- URLs affected: All fixed V3 routes now load the fixed Adsterra placements through the shared ad components (`native-banner` after the second article module, responsive 728x90/468x60/320x50 banner shell, right-rail 160x600, footer Smartlink).
+- Ad baseline: All six Adsterra values are now non-empty and match the private platform codes captured for `themaguscircle-pro`.
+- Verification: `npm run verify` (typecheck, lint, template/content/rendered-seo validators, IndexNow local tests, full build) passes.
+- Follow-up: None.
+
 ### 2026-09-24 - V3 launch configuration for The Magus Circle
 
 - Task: Apply the approved Site Plan, V3 content package, and theme direction for the launch of The Magus Circle (Steam AppID 2796640).
