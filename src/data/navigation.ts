@@ -6,17 +6,17 @@ export interface LocalizedNavigationItem {
 }
 
 export const primaryNavigation: LocalizedNavigationItem[] = [
-  { href: "/wiki", labels: { "en-US": "Wiki" } },
-  { href: "/guides", labels: { "en-US": "Guides" } },
-  { href: "/release-date", labels: { "en-US": "Release Date" } },
-  { href: "/faq", labels: { "en-US": "FAQ" } },
+  { href: "/release-date", labels: { "en-US": "Launch & Status" } },
+  { href: "/gameplay", labels: { "en-US": "Gameplay & Content" } },
+  { href: "/wiki", labels: { "en-US": "Guides & Reference" } },
+  { href: "/reviews", labels: { "en-US": "Community" } },
 ];
 
 export const footerNavigation: LocalizedNavigationItem[] = [
-  { href: "/about", labels: { "en-US": "About" } },
-  { href: "/contact", labels: { "en-US": "Contact" } },
-  { href: "/privacy-policy", labels: { "en-US": "Privacy" } },
-  { href: "/terms", labels: { "en-US": "Terms" } },
+  { href: "/release-date", labels: { "en-US": "Release Date" } },
+  { href: "/download", labels: { "en-US": "Download" } },
+  { href: "/gameplay", labels: { "en-US": "Gameplay" } },
+  { href: "/wiki", labels: { "en-US": "Wiki" } },
 ];
 
 export function navigationLabel(

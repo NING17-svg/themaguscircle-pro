@@ -2,7 +2,7 @@
 
 ## Project Snapshot
 
-`example.com` is a generated game guide site. After launch, treat the generated project as a live content property, not as the central workflow repo or a template.
+`themaguscircle.pro` is a generated game guide site for **The Magus Circle** (Steam AppID 2796640, planned release 2026-09-24, developer/publisher Witchlight). After launch, treat the generated project as a live content property, not as the central workflow repo or a template.
 
 The site uses Next.js App Router, TypeScript, data-driven content in `src/data`, generated metadata, JSON-LD, sitemap, robots, and Next.js static export deployed through Cloudflare Workers Static Assets. Production guide sites must not route ordinary page requests through an OpenNext or other Worker JS runtime.
 
@@ -43,13 +43,14 @@ A growth-relevant task is not complete until `GROWTH_LOG.md` is updated.
 - Use official publisher pages, platform storefronts, official announcements, press kits, or reliable first-party material for factual updates.
 - Mark unconfirmed details as unconfirmed instead of filling gaps with guesses.
 - Do not invent puzzle solutions, boss tactics, item tables, maps, performance settings, preorder details, editions, release dates, or walkthrough steps.
+- For The Magus Circle specifically, the Steam store page (AppID 2796640) is the primary source for release date, developer/publisher, supported languages, and Steam tags. SteamDB is a metadata cross-check only. The Steam community hub is used for demand signal only, never as a primary fact source.
 
 ## Technical SEO Notes
 
 - `npm run validate:template` is mandatory after theme, asset, page-shell, or guide-module changes.
 - `npm run validate:content` checks page count, URLs, FAQ references, and related-page references.
 - `npm run validate:rendered-seo` checks sitemap, canonical metadata, hreflang/x-default, route-manifest alignment, FAQ schema, robots alignment, GA4/Bing wiring, and the fixed AdSense ownership trio.
-- `npm run indexnow:submit -- --submit --site-url https://example.com --url https://example.com/changed-page` submits only the live URLs changed by the current update. It prints one line and a remote submission failure does not roll back or block an otherwise verified publish.
+- `npm run indexnow:submit -- --submit --site-url https://themaguscircle.pro --from-sitemap` is the canonical IndexNow entry point used after launch; pass `--url` arguments for follow-up updates.
 - `npm run routes:manifest` prints the final fixed, tool, entity-Hub, and entity-detail routes; use `-- --output route-manifest.json` when Builder/Verifier needs a machine-readable file.
 - `npm run verify` runs the broader local validation chain.
 

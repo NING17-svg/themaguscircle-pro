@@ -6,43 +6,52 @@ Use this index to find the current role of each URL before editing. Update it wh
 
 ## Page Inventory
 
-The rows below are the primary-locale baseline. Localized versions keep the same
-`translationKey`, use their configured locale prefix, and must appear in canonical,
-hreflang, sitemap, and route-manifest validation.
+The rows below are the primary-locale baseline for `themaguscircle.pro`. Localized versions keep the same `translationKey`, use their configured locale prefix, and must appear in canonical, hreflang, sitemap, and route-manifest validation.
 
 | URL | File/Route | Type | Primary Keyword | Search Intent | Primary CTA | Internal-Link Role | Notes |
 |---|---|---|---|---|---|---|---|
-| `/` | `src/data/pages/home.ts` | Landing | Template Game guide | Find the best entry point | Open Wiki / Browse Guides | Hub | Replace with the configured game's main hub intent. |
-| `/wiki` | `src/data/pages/wiki-pages.ts` | Guide | Template Game wiki | Understand confirmed facts | Guides / FAQ | Hub | Keep official fact base and source context here. |
-| `/guides` | `src/data/pages/guide-pages.ts` | Guide | Template Game guides | Find guide topics before launch | Wiki / Release Info | Hub | Do not invent walkthroughs before reliable details exist. |
-| `/release-date` | `src/data/pages/release-pages.ts` | Guide | Template Game release date | Check release timing and platforms | FAQ / Wiki | Supporting hub | Must stay tied to official or store sources. |
-| `/faq` | `src/data/pages/site-pages.ts` | Guide | Template Game FAQ | Get short answers | Release Info / Contact | Answer hub | FAQ schema enabled. |
-| `/about` | `src/data/pages/site-pages.ts` | Utility | about Template Game Guide | Trust and editorial policy | Contact | Trust | Explain unofficial status and sourcing rules. |
-| `/contact` | `src/data/pages/site-pages.ts` | Utility | contact Template Game Guide | Corrections and source updates | About | Trust | Contact channel pending. |
-| `/privacy-policy` | `src/data/pages/site-pages.ts` | Legal | privacy policy | Privacy and analytics | Terms | Trust | GA4 only when configured. |
-| `/terms` | `src/data/pages/site-pages.ts` | Legal | terms of use | Site use expectations | Privacy Policy | Trust | Keep unofficial disclaimer clear. |
+| `/` | `src/data/pages/home.ts` | Home | The Magus Circle | Find launch status, gameplay basics, system requirements, community discussion | Release Date / Steam Store | Hub | Cluster-index hub for the four launch clusters. |
+| `/release-date` | `src/data/pages/release-pages.ts` | Status | The Magus Circle release date | When does The Magus Circle release? | Demo / Platforms | Hub | Anchored on the Steam store page (AppID 2796640); planned release 2026-09-24. |
+| `/demo` | `src/data/pages/release-pages.ts` | Status | The Magus Circle demo | Does The Magus Circle have a demo? | Release Date | Supporting | No demo entry on Steam as of 2026-09-24. |
+| `/download` | `src/data/pages/release-pages.ts` | Guide | The Magus Circle download | How do I get The Magus Circle on Steam? | Steam Store | Supporting | Steam install path only; unofficial mirrors are not endorsed. |
+| `/price` | `src/data/pages/release-pages.ts` | Status | The Magus Circle price | How much does The Magus Circle cost? | Steam Store | Supporting | Price not announced on Steam as of 2026-09-24. |
+| `/platforms` | `src/data/pages/release-pages.ts` | Comparison | The Magus Circle platforms | Is The Magus Circle on PS5, Switch, mobile? | Release Date | Supporting | Windows PC at launch; consoles and mobile not announced. |
+| `/system-requirements` | `src/data/pages/guide-pages.ts` | Reference | The Magus Circle system requirements | What PC do I need to run The Magus Circle? | Release Date | Supporting | Steam store page source for minimum/recommended tiers. |
+| `/gameplay` | `src/data/pages/guide-pages.ts` | Guide | The Magus Circle gameplay | How does The Magus Circle play (sigils, upgrades, familiars)? | Magic and Sigils | Hub | Mechanics anchor: sigil spellcasting, 250+ upgrades, familiars. |
+| `/characters` | `src/data/pages/guide-pages.ts` | Hub | The Magus Circle characters | Who are the mages and familiars? | Magic and Sigils | Hub | Mage and familiar roster around the Magus Mansion. |
+| `/magic-and-sigils` | `src/data/pages/guide-pages.ts` | Explanation | The Magus Circle magic and sigils | How do arcane sigils and the magic system work? | Gameplay | Supporting | Drawn-input spellcasting and run-modifier interaction. |
+| `/wiki` | `src/data/pages/wiki-pages.ts` | Reference | The Magus Circle wiki | General overview / wiki-style facts | Release Date | Hub | Identity, languages, developer, publisher summary. |
+| `/witchlight` | `src/data/pages/wiki-pages.ts` | Reference | Witchlight The Magus Circle | Who develops and publishes The Magus Circle (Witchlight)? | Wiki | Supporting | Developer/publisher identity. |
+| `/reviews` | `src/data/pages/wiki-pages.ts` | Reference | The Magus Circle reviews | Where can I read reviews and Steam community discussion? | Similar Games | Supporting | Steam community hub + Reddit pointers. |
+| `/multiplayer` | `src/data/pages/guide-pages.ts` | Status | The Magus Circle multiplayer | Does The Magus Circle have multiplayer or co-op? | Gameplay | Supporting | Single-player confirmation; co-op not announced. |
+| `/similar-games` | `src/data/pages/guide-pages.ts` | List | games like The Magus Circle | What games are like The Magus Circle? | Gameplay | Supporting | Mechanic-cue comparison with magic roguelikes. |
+| `/guides` | `src/data/pages/guide-pages.ts` | Hub | The Magus Circle guides | Browse all launch guides | Release Date | Hub | Template contract fixture hub for the guide-pages cluster. |
 
 ## Generated Route Families
 
 - Fixed and tool pages: authored in `src/data/pages/*.ts` with explicit locale and final URL.
-- Entity Hubs and details: generated from `src/data/entities.ts` and the generic renderer in `src/lib/entities.ts`.
+- Entity Hubs and details: generated from `src/data/entities.ts` and the generic renderer in `src/lib/entities.ts`. The Magus Circle declares no entity families at first launch.
 - Final route inventory: `npm run routes:manifest`.
-- Secondary-locale routes use the prefix configured in `src/data/site.ts`; the primary locale remains on root paths.
+- Locale scope: `en-US` only at first launch (per Site Plan and content-package.json).
 
 ## Content Clusters
 
-- Launch facts: `/release-date`, `/faq`
-- Official facts and safe guide structure: `/wiki`, `/guides`
-- Evergreen hub and trust: `/`, `/about`, `/contact`, `/privacy-policy`, `/terms`
+- Launch & Status: `/release-date`, `/demo`, `/download`, `/price`, `/platforms`
+- Gameplay & Content: `/gameplay`, `/magic-and-sigils`, `/characters`, `/wiki`
+- Guides & Reference: `/system-requirements`, `/multiplayer`, `/witchlight`, `/reviews`
+- Community: `/reviews`, `/similar-games`
 
 ## Internal Linking Map
 
-- Homepage should link to the most current high-demand pages.
-- Wiki should link to guide and release pages.
-- Guides should link to wiki and release pages.
-- Release Date should link to FAQ and official sources.
-- FAQ should include all current high-demand answer pages.
+- Homepage links to the highest-demand launch pages and the four cluster hubs.
+- Release date page links to demo, platforms, price, download, and system requirements.
+- Gameplay page links to magic-and-sigils, characters, and similar-games.
+- Wiki page links to release-date, gameplay, witchlight-studio, magic-and-sigils, and characters.
+- Reviews page links to wiki-overview and similar-games.
+- Multiplayer page links to gameplay and system-requirements.
 
 ## Open Questions
 
-- Replace this section with game-specific unknowns during content configuration.
+- Confirm the final retail price once Witchlight publishes it on the Steam store page.
+- Confirm whether a demo is published as a separate Steam app entry closer to launch day.
+- Track any console or mobile announcements that change the platform scope.
