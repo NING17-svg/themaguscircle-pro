@@ -6,6 +6,16 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-26 - Post-launch refresh, price & named mage roster
+
+- Task: Flip launch-status copy to post-launch (Sep 24, 2026 release), publish the Steam price ($12.99 / $11.69 introductory offer ending Oct 1, 2026), and enumerate the six named playable mages (Milk, Macha, Coffee, Anchan, Wheel, Hermit) plus the crazy flower girl unlockable and the unresolved character-selection reset bug.
+- Files changed: `src/data/pages/release-pages.ts`, `src/data/pages/guide-pages.ts`, `src/data/pages/home.ts`, `src/data/pages/wiki-pages.ts`, `CONTENT_INDEX.md`.
+- URLs affected: `/release-date`, `/price`, `/characters`, `/wiki`, `/`.
+- SEO changed: Last-reviewed and fact-boundary timestamps moved to 2026-09-26 across the changed pages; `/release-date` seoTitle/metaDescription and `/price` seoTitle/metaDescription flipped from pre-launch to published framing.
+- Content changed: `/release-date` is now post-launch with 136 reviews / Very Positive (91%), Patches 1.0.1 and 1.0.2, and a Known issues callout for the character-selection reset to Milk and the drawing-tablet cursor flicker. `/price` now lists $12.99 retail, $11.69 introductory offer, Oct 1, 2026 end date, and a single base listing. `/characters` enumerates the six named playable mages with per-mage source attribution, the crazy flower girl unlockable, and the Known issue callout for the Milk-reset bug. Home and wiki intros cross-link to the new patch and price facts.
+- Verification: `npm run verify` (typecheck, lint, template/content/rendered-seo validators, IndexNow local tests, full build) passes.
+- Follow-up: Re-check on Patch 1.0.3 or later to close the character-selection reset bug; revisit the `/characters` page once Witchlight publishes named-mage role bios.
+
 ### 2026-09-24 - Adsterra integration for The Magus Circle
 
 - Task: Populate the fixed six Adsterra unit values in `src/data/ads.ts` (Native Banner, Banner 728x90, 468x60, 320x50, 160x600, Smartlink) so the V3 ad components begin requesting real Adsterra placements after launch.
