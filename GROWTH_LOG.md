@@ -6,6 +6,16 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-27 - Patch 1.0.3 hotfix + residual bug refresh
+
+- Task: Fold the Steam Community Hub "1.0.3 Hotfix!" event (Sep 25) into the launch-status and roster pages, lift the live review snapshot, and trim the Known issues callout to the bugs that are still open after 1.0.3.
+- Files changed: `src/data/pages/release-pages.ts`, `src/data/pages/guide-pages.ts`, `src/data/pages/home.ts`, `src/data/pages/wiki-pages.ts`, `CONTENT_INDEX.md`.
+- URLs affected: `/release-date`, `/characters`, `/`, `/wiki`.
+- SEO changed: `/release-date`, `/`, and `/wiki` intros cite Patch 1.0.3 alongside 1.0.1 and 1.0.2, refresh the review snapshot to 179 / Very Positive (92%), and bump the fact-boundary timestamp to 2026-09-27. `/characters` meta description surfaces the Patch 1.0.3 Poppet Master fix and the pre-Matcha Milk lock removal.
+- Content changed: `/release-date` now includes a "What changed in 1.0.3" callout covering the closed bug list (Exsanguinate, accidental extractions, Riptide, Poppet Master upgrade, ending sequence, spell effects stuck, chest pickup logic, Jam pausing, Milk no longer forced until Matcha unlock, reroll count, ability charge count, Mana Efficiency display, missing Steam achievement, achievements unlocking too soon, potion craft tutorial), the balance changes (no star-shaped shielded enemies; Exsanguinate area -25%; Ink/Inky Area rebalance; Prismatic Gale no longer costs mana), and the new spell scrolls enhancement. The residual Known issues section now lists only the post-Matcha character-selection reset and the Wacom Cintiq cursor flicker. `/characters` adds the Patch 1.0.3 Poppet Master upgrade fix callout, the "Pre-Matcha selection resolves to Milk by design" note, and shifts the residual bug callout to the post-Matcha variant. `/` and `/wiki` cross-link the new patch and review facts.
+- Verification: `npm run verify` (typecheck, lint, template/content/rendered-seo validators, IndexNow local tests, full build) passes.
+- Follow-up: Track Patch 1.0.4 or later for closure of the residual post-Matcha character-selection reset; revisit once Witchlight publishes named-mage role bios.
+
 ### 2026-09-26 - Post-launch refresh, price & named mage roster
 
 - Task: Flip launch-status copy to post-launch (Sep 24, 2026 release), publish the Steam price ($12.99 / $11.69 introductory offer ending Oct 1, 2026), and enumerate the six named playable mages (Milk, Macha, Coffee, Anchan, Wheel, Hermit) plus the crazy flower girl unlockable and the unresolved character-selection reset bug.

@@ -10,17 +10,17 @@ The rows below are the primary-locale baseline for `themaguscircle.pro`. Localiz
 
 | URL | File/Route | Type | Primary Keyword | Search Intent | Primary CTA | Internal-Link Role | Notes |
 |---|---|---|---|---|---|---|---|
-| `/` | `src/data/pages/home.ts` | Home | The Magus Circle | Find launch status, gameplay basics, system requirements, community discussion | Release Date / Steam Store | Hub | Cluster-index hub for the four launch clusters. |
-| `/release-date` | `src/data/pages/release-pages.ts` | Status | The Magus Circle release date | When does The Magus Circle release? | Demo / Platforms | Hub | Post-launch as of 2026-09-26; Patch 1.0.1 and 1.0.2 with a Known issues callout for the character-selection reset and drawing-tablet cursor flicker. |
-| `/demo` | `src/data/pages/release-pages.ts` | Status | The Magus Circle demo | Does The Magus Circle have a demo? | Release Date | Supporting | No demo entry on Steam as of 2026-09-26. |
+| `/` | `src/data/pages/home.ts` | Home | The Magus Circle | Find launch status, gameplay basics, system requirements, community discussion | Release Date / Steam Store | Hub | Cluster-index hub for the four launch clusters; updated intro cites 179 / Very Positive (92%) and Patches 1.0.1 / 1.0.2 / 1.0.3 as of 2026-09-27. |
+| `/release-date` | `src/data/pages/release-pages.ts` | Status | The Magus Circle release date | When does The Magus Circle release? | Demo / Platforms | Hub | Post-launch as of 2026-09-27; Patches 1.0.1, 1.0.2, and 1.0.3 with a 'What changed in 1.0.3' callout (new spell scrolls, star-shaped shielded enemies removed) and a residual Known issues callout for the post-Matcha character-selection reset and the Wacom Cintiq cursor flicker. |
+| `/demo` | `src/data/pages/release-pages.ts` | Status | The Magus Circle demo | Does The Magus Circle have a demo? | Release Date | Supporting | No demo entry on Steam as of 2026-09-27. |
 | `/download` | `src/data/pages/release-pages.ts` | Guide | The Magus Circle download | How do I get The Magus Circle on Steam? | Steam Store | Supporting | Steam install path only; unofficial mirrors are not endorsed. |
 | `/price` | `src/data/pages/release-pages.ts` | Status | The Magus Circle price | How much does The Magus Circle cost? | Steam Store | Supporting | $12.99 USD retail, $11.69 introductory offer (10% off) ending Oct 1, 2026; single base listing, no separate editions currently advertised. |
 | `/platforms` | `src/data/pages/release-pages.ts` | Comparison | The Magus Circle platforms | Is The Magus Circle on PS5, Switch, mobile? | Release Date | Supporting | Windows PC at launch; consoles and mobile not announced. |
 | `/system-requirements` | `src/data/pages/guide-pages.ts` | Reference | The Magus Circle system requirements | What PC do I need to run The Magus Circle? | Release Date | Supporting | Steam store page source for minimum/recommended tiers. |
 | `/gameplay` | `src/data/pages/guide-pages.ts` | Guide | The Magus Circle gameplay | How does The Magus Circle play (sigils, upgrades, familiars)? | Magic and Sigils | Hub | Mechanics anchor: sigil spellcasting, 250+ upgrades, familiars. |
-| `/characters` | `src/data/pages/guide-pages.ts` | Hub | The Magus Circle characters | Who are the mages and familiars? | Magic and Sigils | Hub | Six named playable mages (Milk, Macha, Coffee, Anchan, Wheel, Hermit) plus the crazy flower girl unlockable; Known issue callout for the character-selection reset bug. |
+| `/characters` | `src/data/pages/guide-pages.ts` | Hub | The Magus Circle characters | Who are the mages and familiars? | Magic and Sigils | Hub | Six named playable mages (Milk, Macha, Coffee, Anchan, Wheel, Hermit) plus the crazy flower girl unlockable; Patch 1.0.3 Poppet Master fix callout; 'Pre-Matcha selection resolves to Milk by design' note; residual post-Matcha reset callout. |
 | `/magic-and-sigils` | `src/data/pages/guide-pages.ts` | Explanation | The Magus Circle magic and sigils | How do arcane sigils and the magic system work? | Gameplay | Supporting | Drawn-input spellcasting and run-modifier interaction. |
-| `/wiki` | `src/data/pages/wiki-pages.ts` | Reference | The Magus Circle wiki | General overview / wiki-style facts | Release Date | Hub | Identity, languages, developer, publisher summary. |
+| `/wiki` | `src/data/pages/wiki-pages.ts` | Reference | The Magus Circle wiki | General overview / wiki-style facts | Release Date | Hub | Identity, languages, developer, publisher summary; 179 / Very Positive (92%) snapshot and Patches 1.0.1 / 1.0.2 / 1.0.3 as of 2026-09-27. |
 | `/witchlight` | `src/data/pages/wiki-pages.ts` | Reference | Witchlight The Magus Circle | Who develops and publishes The Magus Circle (Witchlight)? | Wiki | Supporting | Developer/publisher identity. |
 | `/reviews` | `src/data/pages/wiki-pages.ts` | Reference | The Magus Circle reviews | Where can I read reviews and Steam community discussion? | Similar Games | Supporting | Steam community hub + Reddit pointers. |
 | `/multiplayer` | `src/data/pages/guide-pages.ts` | Status | The Magus Circle multiplayer | Does The Magus Circle have multiplayer or co-op? | Gameplay | Supporting | Single-player confirmation; co-op not announced. |
@@ -53,6 +53,6 @@ The rows below are the primary-locale baseline for `themaguscircle.pro`. Localiz
 ## Open Questions
 
 - Confirm whether a demo is published as a separate Steam app entry after launch.
-- Track the post-launch patch cadence (Patch 1.0.3 or later) to see when the character-selection reset bug is closed.
+- Track the post-launch patch cadence (Patch 1.0.4 or later) to see when the residual post-Matcha character-selection reset is closed.
 - Track any console or mobile announcements that change the platform scope.
 - Per-character role bios and individual familiar names will be added to `/characters` once Witchlight publishes them on the Steam store page or in patch notes.
