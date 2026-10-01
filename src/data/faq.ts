@@ -2,129 +2,164 @@ import type { FAQItem } from "@/types/content";
 
 export const faqItems: FAQItem[] = [
   {
-    id: "home-faq-1",
-    question: "When does The Magus Circle release?",
-    answer: "The Magus Circle is planned to launch on September 24, 2026 on Steam (AppID 2796640), developed and published by Witchlight. Status as of 2026-09-24 is pre-launch; the release date page carries the latest confirmation from the Steam store page.",
-    pageIds: ["home", "release-date"],
-    category: "release",
-    schemaEligible: true,
-    sourceStatus: "official",
+    "id": "home-faq-1",
+    "question": "When does The Magus Circle release?",
+    "answer": "The Magus Circle is planned to launch on September 24, 2026 on Steam (AppID 2796640), developed and published by Witchlight. Status is pre-launch; the release date page carries the latest confirmation from the Steam store page.",
+    "pageIds": [
+      "home",
+      "release-date"
+    ],
+    "category": "release",
+    "schemaEligible": true,
+    "sourceStatus": "official"
   },
   {
-    id: "home-faq-2",
-    question: "Does The Magus Circle have a demo?",
-    answer: "No public demo has been listed on the Steam store page for The Magus Circle as of 2026-09-24. Demos appear as a separate Steam app entry when published; the demo page explains how to watch for an official announcement.",
-    pageIds: ["home", "demo"],
-    category: "release",
-    schemaEligible: true,
-    sourceStatus: "official",
+    "id": "home-faq-2",
+    "question": "Does The Magus Circle have a demo?",
+    "answer": "No public demo has been listed on the Steam store page for The Magus Circle. Demos appear as a separate Steam app entry when published; the demo page explains how to watch for an official announcement.",
+    "pageIds": [
+      "home",
+      "demo"
+    ],
+    "category": "release",
+    "schemaEligible": true,
+    "sourceStatus": "official"
   },
   {
-    id: "home-faq-3",
-    question: "Which platforms is The Magus Circle on?",
-    answer: "The Steam store page lists Windows PC at launch; PS5, Nintendo Switch, and mobile versions are not announced as of 2026-09-24. The platforms page walks through the confirmed and unconfirmed platform scope.",
-    pageIds: ["home", "platforms"],
-    category: "platform",
-    schemaEligible: true,
-    sourceStatus: "official",
+    "id": "home-faq-3",
+    "question": "Which platforms is The Magus Circle on?",
+    "answer": "The Steam store page lists Windows PC at launch; PS5, Nintendo Switch, and mobile versions are not announced. The platforms page walks through the confirmed and unconfirmed platform scope.",
+    "pageIds": [
+      "home",
+      "platforms"
+    ],
+    "category": "platform",
+    "schemaEligible": true,
+    "sourceStatus": "official"
   },
   {
-    id: "release-date-faq-1",
-    question: "Has The Magus Circle launched yet?",
-    answer: "No. The Magus Circle release date is September 24, 2026 on Steam as of 2026-09-24. The game is in the planned-release window and has not shipped.",
-    pageIds: ["release-date"],
-    category: "release",
-    schemaEligible: true,
-    sourceStatus: "official",
+    "id": "release-date-faq-1",
+    "question": "Has The Magus Circle launched yet?",
+    "answer": "No. The Magus Circle release date is September 24, 2026 on Steam. The game is in the planned-release window and has not shipped.",
+    "pageIds": [
+      "release-date"
+    ],
+    "category": "release",
+    "schemaEligible": true,
+    "sourceStatus": "official"
   },
   {
-    id: "release-date-faq-2",
-    question: "Is The Magus Circle coming to consoles or mobile?",
-    answer: "Consoles (PS5, Nintendo Switch, Xbox) and mobile versions are not announced as of 2026-09-24. The Steam store page currently lists Windows PC only.",
-    pageIds: ["release-date", "platforms"],
-    category: "platform",
-    schemaEligible: true,
-    sourceStatus: "official",
+    "id": "release-date-faq-2",
+    "question": "Is The Magus Circle coming to consoles or mobile?",
+    "answer": "Consoles (PS5, Nintendo Switch, Xbox) and mobile versions are not announced. The Steam store page currently lists Windows PC only.",
+    "pageIds": [
+      "release-date",
+      "platforms"
+    ],
+    "category": "platform",
+    "schemaEligible": true,
+    "sourceStatus": "official"
   },
   {
-    id: "release-date-faq-3",
-    question: "What time does The Magus Circle unlock on launch day?",
-    answer: "Steam store pages publish a date, not a region-specific time of day. The Magus Circle is expected to unlock in line with Steam's standard release window on the planned date.",
-    pageIds: ["release-date"],
-    category: "release",
-    schemaEligible: true,
-    sourceStatus: "official",
+    "id": "release-date-faq-3",
+    "question": "What time does The Magus Circle unlock on launch day?",
+    "answer": "Steam store pages publish a date, not a region-specific time of day. The Magus Circle is expected to unlock in line with Steam's standard release window on the planned date.",
+    "pageIds": [
+      "release-date"
+    ],
+    "category": "release",
+    "schemaEligible": true,
+    "sourceStatus": "official"
   },
   {
-    id: "demo-faq-1",
-    question: "Is there a The Magus Circle demo on Steam?",
-    answer: "No. The Steam store page for The Magus Circle (AppID 2796640) does not list a demo as of 2026-09-24.",
-    pageIds: ["demo"],
-    category: "release",
-    schemaEligible: true,
-    sourceStatus: "official",
+    "id": "demo-faq-1",
+    "question": "Is there a The Magus Circle demo on Steam?",
+    "answer": "No. The Steam store page for The Magus Circle (AppID 2796640) does not list a demo.",
+    "pageIds": [
+      "demo"
+    ],
+    "category": "release",
+    "schemaEligible": true,
+    "sourceStatus": "official"
   },
   {
-    id: "demo-faq-2",
-    question: "Will there be a demo before launch?",
-    answer: "Witchlight has not announced a demo as of 2026-09-24. The Steam store page shows the base game listing without a paired demo AppID.",
-    pageIds: ["demo"],
-    category: "release",
-    schemaEligible: true,
-    sourceStatus: "official",
+    "id": "demo-faq-2",
+    "question": "Will there be a demo before launch?",
+    "answer": "Witchlight has not announced a demo. The Steam store page shows the base game listing without a paired demo AppID.",
+    "pageIds": [
+      "demo"
+    ],
+    "category": "release",
+    "schemaEligible": true,
+    "sourceStatus": "official"
   },
   {
-    id: "demo-faq-3",
-    question: "Can I try The Magus Circle for free before buying?",
-    answer: "No free trial or demo has been published on Steam as of 2026-09-24. The only way to play The Magus Circle today is through the Steam client with a purchased copy.",
-    pageIds: ["demo", "price"],
-    category: "release",
-    schemaEligible: true,
-    sourceStatus: "official",
+    "id": "demo-faq-3",
+    "question": "Can I try The Magus Circle for free before buying?",
+    "answer": "No free trial or demo has been published on Steam. The only way to play The Magus Circle today is through the Steam client with a purchased copy.",
+    "pageIds": [
+      "demo",
+      "price"
+    ],
+    "category": "release",
+    "schemaEligible": true,
+    "sourceStatus": "official"
   },
   {
-    id: "price-faq-1",
-    question: "How much does The Magus Circle cost?",
-    answer: "The Magus Circle price has not been published on the Steam store page as of 2026-09-24. The Steam store page lists a planned release on September 24, 2026 without a final retail figure.",
-    pageIds: ["price"],
-    category: "release",
-    schemaEligible: true,
-    sourceStatus: "official",
+    "id": "price-faq-1",
+    "question": "How much does The Magus Circle cost?",
+    "answer": "The Magus Circle price has not been published on the Steam store page. The Steam store page lists a planned release on September 24, 2026 without a final retail figure.",
+    "pageIds": [
+      "price"
+    ],
+    "category": "release",
+    "schemaEligible": true,
+    "sourceStatus": "official"
   },
   {
-    id: "price-faq-2",
-    question: "Where can I buy The Magus Circle?",
-    answer: "Steam is the only sales channel confirmed by the Steam store page as of 2026-09-24. Witchlight has not announced alternative storefronts.",
-    pageIds: ["price", "download"],
-    category: "release",
-    schemaEligible: true,
-    sourceStatus: "official",
+    "id": "price-faq-2",
+    "question": "Where can I buy The Magus Circle?",
+    "answer": "Steam is the only sales channel confirmed by the Steam store page. Witchlight has not announced alternative storefronts.",
+    "pageIds": [
+      "price",
+      "download"
+    ],
+    "category": "release",
+    "schemaEligible": true,
+    "sourceStatus": "official"
   },
   {
-    id: "price-faq-3",
-    question: "Will The Magus Circle have regional pricing?",
-    answer: "Regional pricing is governed by Steam and applied when Witchlight sets the base price. As of 2026-09-24 no base price has been announced.",
-    pageIds: ["price"],
-    category: "release",
-    schemaEligible: true,
-    sourceStatus: "official",
+    "id": "price-faq-3",
+    "question": "Will The Magus Circle have regional pricing?",
+    "answer": "Regional pricing is governed by Steam and applied when Witchlight sets the base price. no base price has been announced.",
+    "pageIds": [
+      "price"
+    ],
+    "category": "release",
+    "schemaEligible": true,
+    "sourceStatus": "official"
   },
   {
-    id: "multiplayer-faq-1",
-    question: "Does The Magus Circle have multiplayer?",
-    answer: "The Steam store page lists The Magus Circle as a single-player experience as of 2026-09-24. Co-op and online multiplayer are not announced.",
-    pageIds: ["multiplayer"],
-    category: "gameplay",
-    schemaEligible: true,
-    sourceStatus: "official",
+    "id": "multiplayer-faq-1",
+    "question": "Does The Magus Circle have multiplayer?",
+    "answer": "The Steam store page lists The Magus Circle as a single-player experience. Co-op and online multiplayer are not announced.",
+    "pageIds": [
+      "multiplayer"
+    ],
+    "category": "gameplay",
+    "schemaEligible": true,
+    "sourceStatus": "official"
   },
   {
-    id: "multiplayer-faq-2",
-    question: "Will there be co-op or online play?",
-    answer: "Witchlight has not announced co-op or online play as of 2026-09-24. The Steam store page description focuses on the single-player roguelike run loop.",
-    pageIds: ["multiplayer", "gameplay"],
-    category: "gameplay",
-    schemaEligible: true,
-    sourceStatus: "official",
-  },
+    "id": "multiplayer-faq-2",
+    "question": "Will there be co-op or online play?",
+    "answer": "Witchlight has not announced co-op or online play. The Steam store page description focuses on the single-player roguelike run loop.",
+    "pageIds": [
+      "multiplayer",
+      "gameplay"
+    ],
+    "category": "gameplay",
+    "schemaEligible": true,
+    "sourceStatus": "official"
+  }
 ];
